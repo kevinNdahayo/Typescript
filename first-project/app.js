@@ -1,18 +1,12 @@
-var add = function (n1, n2, showResult, phrase) {
-    // if (typeof n1 !== "number" && typeof n2 !== "number") {
-    //     throw new Error("Incorrect Input");
-    // }
-    if (showResult) {
-        console.log(phrase, n1 + n2);
-    }
-    else {
-        return n1 + n2;
-    }
+var person = {
+    name: "kevin",
+    age: 18,
+    hobbies: ['sports', 'cooking'],
+    role: [2, 'programmer']
 };
-var number1;
-number1 = 5;
-var number2 = 2.8;
-var printResult = true;
-var printPhrase;
-printPhrase = "The Result is: ";
-add(number1, number2, printResult, printPhrase);
+person.role.push("Admin");
+console.log(person.role);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby);
+}
