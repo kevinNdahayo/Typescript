@@ -1,12 +1,25 @@
+//  Working with enums
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
 var person = {
-    name: "kevin",
+    name: "Kevin",
     age: 18,
-    hobbies: ['sports', 'cooking'],
-    role: [2, 'programmer']
+    hobbies: ["Cooking", "Biking"],
+    role: Role.ADMIN
 };
-person.role.push("Admin");
-console.log(person.role);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby);
+if (person.role === Role.ADMIN) {
+    console.log("Is admin");
+}
+if (person.role === Role.READ_ONLY) {
+    console.log("Is a read-only files");
+}
+if (person.role === Role.AUTHOR) {
+    console.log(" Is an an author !!!");
 }
