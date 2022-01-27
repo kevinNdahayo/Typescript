@@ -1,22 +1,18 @@
-// Using aliases in typescript
-type combinedTypes = number | string ;
-type convertionType =  "as-number" | "as-text";
-const combine = (
-    input1: combinedTypes,
-     input2: combinedTypes ,
-      NumConverter:convertionType
- ) => {
-    let result: any;
-        if (typeof input1 === "number" && typeof input2 === "number") {
-            result = +input1 + +input2;
-        } else {
-            result = input1.toString() + input2.toString();
-        }
+//  Functions with typescript
 
-        console.log(result);
-        
+function add(n1: number , n2: number): number{
+    return n1 + n2;
 }
 
 
-const combinedAge = combine(30, 26, "as-number");
-const combineNames = combine("Max", "Anna", "as-text");
+function concatStrings(n1: number , n2: number ): string {
+    return n1.toString() + n2.toString();
+}
+const resultConcatination = concatStrings(2,3)
+const result = add(2,3);
+console.log(resultConcatination);
+console.log(result);
+
+function printResult(num: number): void {
+    console.log('Result is ', num);
+}
