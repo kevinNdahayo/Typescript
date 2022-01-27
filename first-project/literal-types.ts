@@ -1,10 +1,9 @@
-// Using aliases in typescript
-type combinedTypes = number | string ;
-type convertionType =  "as-number" | "as-text";
+// literal types in typescript
+
 const combine = (
-    input1: combinedTypes,
-     input2: combinedTypes ,
-      NumConverter:convertionType
+    input1: number | string ,
+     input2: number | string ,
+      NumConverter: "as-number" | "as-text",
  ) => {
     let result: any;
         if (typeof input1 === "number" && typeof input2 === "number") {
