@@ -1,0 +1,18 @@
+{
+ 
+  "dependencies": {
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-sever"
+  },
+  "name": "first-project",
+  "version": "1.0.0",
+  "description": "This is a typescript project",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC"
+}
